@@ -1,0 +1,169 @@
+@use "../style";
+@use "../utils/variable" as var;
+@use "../../sass/base/fonts";
+@use "../utils/mixin" as mix;
+
+.navbar__content,
+.navbar__content__link,
+.navbar__content__search,
+.navbar__content__person,
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+nav {
+  background-color: var.$White_color;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.search {
+  max-width: 344px;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid var.$green_color;
+  padding: 8px;
+  border-radius: 4px;
+}
+.navbar__content {
+  justify-content: space-between;
+  padding: 8px 0px;
+  align-items: center;
+  gap: 20px;
+  &__link {
+    display: none;
+    gap: 24px;
+    @media (min-width: 680px) {
+      display: flex;
+    }
+  }
+  &__person {
+    gap: 12px;
+    padding-left: 10px;
+    display: none;
+    @media (min-width: 680px) {
+      display: flex;
+    }
+  }
+  &__basket {
+    position: relative;
+    span {
+      position: absolute;
+      top: -17px;
+      right: 13px;
+      font-size: 10px;
+      color: var.$White_color;
+      background-color: var.$orange_color;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  }
+  &__search {
+    max-width: 345px;
+    width: 100%;
+    @media (min-width: 950px) {
+      max-width: 450px;
+      width: 100%;
+    }
+    a {
+      padding: 10px;
+      margin-right: 16px;
+      border-radius: 4px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background-color: var.$green_color;
+      display: none;
+      @media (min-width: 680px) {
+        display: flex;
+      }
+    }
+    h6 {
+      color: var.$White_color;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}
+
+input {
+  max-width: 345px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+ul li p {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  color: var.$Header_Basket;
+}
+
+// RESPONSIVE
+
+.navbar__content {
+  &__image {
+    display: none;
+    @media (min-width: 1070px) {
+      display: block;
+    }
+  }
+  &__image2 {
+    display: block;
+    @media (min-width: 1070px) {
+      display: none;
+    }
+  }
+  .Hidden950 {
+    display: none;
+    @media (min-width: 950px) {
+      display: block;
+    }
+  }
+}
+
+.hidden__catalog {
+  display: none;
+  transition: 1s;
+}
+
+.show-catalog {
+  transition: 1s;
+  @include mix.grid($gap: 20px, $number: 4, $align: start);
+  @media (max-width: 900px) {
+    @include mix.grid($gap: 20px, $number: 2, $align: start);
+  }
+  @media (max-width: 450px) {
+    @include mix.grid($gap: 10px, $number: 2, $align: star);
+  }
+  @media (max-width: 340px) {
+    @include mix.grid($gap: 10px, $number: 1, $align: start);
+  }
+  padding: 80px 0 16px;
+
+  justify-content: space-between;
+  .catalog__items {
+    margin-bottom: 24px;
+    @media (max-width: 380px) {
+      margin-bottom: 5px;
+    }
+  }
+  .catalog__links {
+    color: var.$Header_Basket;
+    font-size: 16px;
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
+    font-weight: 700;
+    line-height: 150%;
+    &:hover {
+      color: var.$red_Color;
+      transition: 0.5s;
+    }
+  }
+}

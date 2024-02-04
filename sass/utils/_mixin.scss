@@ -1,0 +1,9 @@
+@use "../utils/variable" as var;
+
+
+@mixin grid($number: 2, $fr: auto, $align: center, $gap: 40px){
+    display: grid;
+    gap: $gap;
+    align-items: $align;
+    grid-template-columns: repeat($number, $fr);
+}

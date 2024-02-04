@@ -1,0 +1,219 @@
+@use "../style";
+@use "../utils/variable" as var;
+@use "../utils/mixin" as mix;
+@use "../utils/functions" as func;
+@use "../base/fonts";
+@use "../layout/footer";
+@use "../layout/header";
+
+#discount {
+  padding: 200px 0;
+}
+
+.alert {
+  font-size: 24px;
+  color: var.$orange_color;
+}
+
+main {
+  background-color: var.$discount_background;
+}
+
+#discount {
+  padding: 140px 0 120px;
+  background-color: var.$discount_background;
+}
+
+.discount {
+  &__item__top {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    color: var.$Header_Basket;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+    @media (max-width: 550px) {
+      font-size: 25px;
+    }
+    @media (max-width: 280px) {
+      font-size: 18px;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    p {
+      color: var.$Gray__discount;
+      font-size: 16px;
+      line-height: 150%;
+      @media (max-width: 550px) {
+        font-size: 12px;
+      }
+      @media (max-width: 280px) {
+        font-size: 8px;
+      }
+    }
+  }
+  &__item {
+    &__card {
+      max-height: 500px;
+      height: 100%;
+      position: relative;
+      background-color: var.$White_color;
+      border-radius: 4px;
+      box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      h6 {
+        position: absolute;
+        top: 118px;
+        left: 8px;
+        padding: 4px 8px;
+        background-color: var.$orange_color;
+        border-radius: 4px;
+        color: var.$White_color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+    &__heart {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 4px;
+      background-color: var.$heart__outline;
+      border-radius: 6px;
+    }
+    &__image {
+      max-width: 500px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+    }
+
+    &__main {
+      @include mix.grid($number: 4, $fr: 1fr);
+      @media (max-width: 1100px) {
+        @include mix.grid($number: 3, $fr: 1fr, $gap: 20px);
+      }
+      @media (max-width: 710px) {
+        @include mix.grid($number: 2, $fr: 1fr, $gap: 20px);
+      }
+      @media (max-width: 484px) {
+        @include mix.grid($number: 1);
+      }
+    }
+  }
+
+  &__details {
+    padding: 8px;
+    img {
+      padding: 8px 0;
+    }
+    h4 {
+      color: var.$Header_Basket;
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 400;
+      @media (max-width: 1090px) {
+        font-size: 12px;
+      }
+    }
+    a {
+      color: var.$green_color;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      justify-content: center;
+      border-radius: 4px;
+      padding: 8px;
+      border: 1px solid var.$green_color;
+      &:hover {
+        background-color: var.$orange_color;
+        transition: 0.5s;
+        color: var.$White_color;
+        border: none;
+      }
+    }
+  }
+  &__payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    h2,
+    h3,
+    p {
+      color: var.$Header_Basket;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 150%;
+    }
+    p {
+      color: var.$discount__p_color;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    h3 {
+      color: var.$Gray__discount;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  &__value {
+    margin-bottom: 18px;
+  }
+}
+
+h4 {
+  max-width: 252px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.description {
+  font-size: 20px;
+  margin: 5px 0;
+  color: var.$red_Color;
+}
+
+.starimage {
+  max-width: 200px;
+  height: 30px;
+}
+
+.pagination {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+  padding-bottom: 30px;
+  button {
+    height: 30px;
+    width: 30px;
+  }
+  img {
+    max-width: 30px;
+  }
+}
+.page-item {
+  border: 2.5px solid var.$orange_color;
+  border-radius: 20px;
+}
+.active {
+  background-color: var.$orange_color;
+  .page-link{
+    color: var.$White_color;
+  }
+}
+.page-link {
+  font-weight: 600;
+  color: var.$Header_Basket;
+}
