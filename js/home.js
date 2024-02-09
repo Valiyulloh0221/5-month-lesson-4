@@ -1,3 +1,30 @@
+/// modal content
+const modalOpen = document.getElementById('btn-open');
+const modalClose = document.getElementById('btn-close');
+const modal = document.querySelector('.autorization');
+const modalContent = document.querySelector('.autorization-content');
+
+modalOpen.addEventListener('click', function (e) {
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+modalClose.addEventListener('click', function (e) {
+  modal.classList.remove('open');
+  document.body.style.overflow = 'auto';
+});
+
+modalContent.addEventListener('click', function (e) {
+  e.stopPropagation();
+});
+
+modal.addEventListener('click', function (e) {
+  modal.classList.remove('open');
+  document.body.style.overflow = 'auto';
+});
+
+
+
 const itemCardMain = document.querySelector(".discount__item__main");
 const searchInput = document.querySelector(".search-input");
 let search = "";
@@ -18,7 +45,7 @@ function getStar(rating) {
   ];
 
   const starIndex = Math.round(rating) - 1;
-  return `../assets/images/index/homeheart/feather-icon/${starImages[starIndex]}`;
+  return `../assets/images/index/${starImages[starIndex]}`;
 }
 
 function getThisProductCard({ name, category, description, price, rating, discount, images }) {
@@ -57,7 +84,7 @@ function getProducts() {
   let results = products.filter((pr) => pr.name.toLowerCase().includes(search));
   let pages = Math.ceil(results.length / LIMIT);
 
-  if (pages > 1) {
+  if (pages < 1) {
     pagination.innerHTML = `<li class="page-item"><button onclick="getPage('-')" class="page-link"><img src="../assets/images/index/left.svg" alt=""></button></li>`;
 
     for (let i = 1; i <= pages; i++) {
@@ -65,12 +92,9 @@ function getProducts() {
     }
 
     pagination.innerHTML += `<li class="page-item"><button onclick="getPage('+')" class="page-link page-next"><img src="../assets/images/index/right.svg" alt=""></button></li>`;
-  } else {
-    pagination.innerHTML = "";
   }
 
   itemCardMain.innerHTML = "";
-  productQuantity.textContent = results.length;
 
   let startProduct = activePage * LIMIT;
   let endProduct = (activePage - 1) * LIMIT;
@@ -80,16 +104,12 @@ function getProducts() {
     itemCardMain.innerHTML += card;
   });
 
-  if (activePage === 1) {
-    document.querySelector(".page-link").disabled = true;
-  } else if (activePage === pages) {
-    document.querySelector(".page-next").disabled = true;
-  }
+
 }
 
 getProducts();
 
-searchInput.addEventListener("keyup", function () {
+searchInput.addEventListener("keyup" , function () {
   search = this.value.trim().toLowerCase();
   getProducts();
 });

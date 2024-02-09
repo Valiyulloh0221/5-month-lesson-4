@@ -1,0 +1,24 @@
+.product-main {
+  margin-bottom: 20px;
+  padding-top: 68px !important;
+  background-color: #F9F4E2;
+  .ssilkalar{
+    padding-left: max(170px);
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    a{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #414141;
+      font-family: Rubik;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;       
+    }
+  }
+}
