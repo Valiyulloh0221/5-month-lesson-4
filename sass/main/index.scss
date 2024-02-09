@@ -5,6 +5,8 @@
 @use "../base/fonts";
 @use "../layout/footer";
 @use "../layout/header";
+@import '../pages/allproducts';
+@import '../pages/product';
 
 #home {
   padding-top: 55px;
