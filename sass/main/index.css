@@ -1083,12 +1083,11 @@ h4 {
 }
 
 .product-main {
-  margin-bottom: 20px;
   padding-top: 68px !important;
   background-color: #F9F4E2;
+  padding-left: 150px;
 }
 .product-main .ssilkalar {
-  padding-left: 170px;
   padding-top: 24px;
   display: flex;
   align-items: center;
@@ -1105,6 +1104,209 @@ h4 {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+}
+.product-main .mainyozuvlar h4 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 1208px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.product-main .karusel .carousel {
+  display: flex;
+}
+.product-main .karusel .carousel #show {
+  width: 504px;
+  height: 496px;
+}
+.product-main .karusel .carousel #show img {
+  width: 100%;
+  height: 100%;
+}
+.product-main .karusel .carousel .indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-main .karusel .carousel .indicators img {
+  width: 100px;
+  height: 124px;
+}
+.product-main #discount {
+  background: transparent !important;
+}
+
+.basket-main {
+  padding-top: 68px !important;
+  background-color: #F9F4E2;
+  padding-left: 150px;
+}
+.basket-main .links {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.basket-main .links a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #414141;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket-main .yoz {
+  padding-bottom: 65px;
+  font-family: Rubik;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket-main .addcart .container {
+  display: flex;
+  gap: 60px;
+}
+.basket-main .addcart .container .left .belgilash {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.basket-main .addcart .container .left .belgilash .belgi {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #606060;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.basket-main .addcart .container .left .belgilash .ochir {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FF6633;
+}
+.basket-main .addcart .container .left .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.basket-main .addcart .container .left .cards .card {
+  background: #fff;
+  gap: 242px;
+  display: flex;
+  justify-content: space-between;
+}
+.basket-main .addcart .container .left .cards .card .birinchibolak {
+  display: flex;
+  gap: 8px;
+}
+.basket-main .addcart .container .left .cards .card .birinchibolak .yozuv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.basket-main .addcart .container .left .cards .card .birinchibolak .yozuv h5 {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket-main .addcart .container .left .cards .card .birinchibolak .yozuv h6 {
+  gap: 3px;
+  display: flex;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+.basket-main .addcart .container .left .cards .card .birinchibolak .yozuv h6 p {
+  color: #606060;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak {
+  display: flex;
+  gap: 40px;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak h4 {
+  padding-right: 8px;
+  padding-top: 8px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #414141;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak p {
+  padding-right: 8px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #8F8F8F;
+  text-decoration: line-through;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak .btns .bir {
+  width: 33px;
+  height: 40px;
+  border-radius: 4px 0 0 4px;
+  background: #70C05B;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak .btns .ikki {
+  width: 33px;
+  height: 40px;
+  background: #70C05B;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak .btns .uch {
+  width: 33px;
+  height: 40px;
+  background: #70C05B;
+  border-radius: 0 4px 4px 0;
+}
+.basket-main .addcart .container .left .cards .card .ikkinchibolak .btns button {
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 #home {
@@ -1642,28 +1844,21 @@ iframe {
   box-sizing: border-box;
 }
 
-.autorization {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(252, 213, 186, 0.8);
-  display: none !important;
+  background-color: rgba(255, 0, 0, 0.2);
+  display: none;
   align-items: center;
   justify-content: center;
   animation: modalScale 0.3s linear alternate;
 }
-.autorization-content {
-  width: 40%;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
-  background: #fff;
-}
-.autorization-content h2 {
+.modal h2 {
+  padding-bottom: 32px;
   padding-top: 32px;
-  text-align: center;
   font-family: Rubik;
   font-size: 24px;
   font-weight: 700;
@@ -1672,17 +1867,124 @@ iframe {
   text-align: center;
 }
 
-.autorization.open {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(252, 213, 186, 0.8);
+.modal-form .nomer {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form .nomer .leybl {
+  padding-left: 60px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8F8F8F;
+}
+.modal-form .nomer #number {
+  padding-left: 16px;
+  width: 260px;
+  height: 60px;
+  border: 2px solid #70C05B;
+  border-radius: 4px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+.modal-form .nomer input::-moz-placeholder {
+  color: #414141;
+  margin-left: 16px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.modal-form .nomer input::placeholder {
+  color: #414141;
+  margin-left: 16px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.modal-form button {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 260px;
+  height: 68px;
+  border-radius: 4px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background: #FCD5BA;
+  color: #FF6633;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+#btn-close {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  gap: 8px;
+  background: #F3F2F1;
+  margin-left: 89.5%;
+}
+#btn-close img {
+  width: 13px;
+  height: 13px;
+}
+
+.modal-content {
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.modal-content .btns {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  animation: modalScale 0.3s linear alternate;
+  gap: 16px;
+}
+.modal-content .btns button {
+  width: 121px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  gap: 8px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #606060;
+  transition: 0.5s;
+}
+.modal-content .btns button:hover {
+  color: #70C05B;
+  border: 1px solid #70C05B;
 }
 
 @keyframes modalScale {

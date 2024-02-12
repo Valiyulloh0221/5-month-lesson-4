@@ -1,9 +1,8 @@
 .product-main {
-  margin-bottom: 20px;
   padding-top: 68px !important;
   background-color: #F9F4E2;
+  padding-left: max(150px);
   .ssilkalar{
-    padding-left: max(170px);
     padding-top: 24px;
     display: flex;
     align-items: center;
@@ -20,5 +19,43 @@
       letter-spacing: 0em;
       text-align: left;       
     }
+  }
+  .mainyozuvlar {
+    h4 {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      max-width: 1208px;
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;  
+    }
+  }
+  .karusel{
+    .carousel {
+      display: flex;
+      #show {
+        width: 504px;
+        height: 496px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .indicators {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 100px;
+          height: 124px;
+        }
+      }
+    }
+  }
+  #discount{
+    background: transparent !important;
   }
 }

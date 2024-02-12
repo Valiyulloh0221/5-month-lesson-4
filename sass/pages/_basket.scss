@@ -1,0 +1,172 @@
+.basket-main{
+  padding-top: 68px !important;
+  background-color: #F9F4E2;
+  padding-left: max(150px);
+  .links{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    a{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #414141;
+      font-family: Rubik;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .yoz{
+    padding-bottom: 65px;
+    font-family: Rubik;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0em;
+    text-align: left;    
+  }
+  .addcart{
+    .container{
+      display: flex;
+      gap: 60px;
+      .left{
+        .belgilash{
+          margin-bottom: 24px;
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          .belgi{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #606060;
+            font-family: Rubik;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;            
+          }
+          .ochir{
+            font-family: Rubik;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #FF6633;            
+          }
+        }
+        .cards{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          .card{
+            background: #fff;
+            gap: 242px;
+            display: flex;
+            justify-content: space-between;
+            .birinchibolak{
+              display: flex;
+              gap: 8px;
+              .yozuv{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                h5{
+                  font-family: Rubik;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  letter-spacing: 0em;
+                  text-align: left;    
+                }
+                h6{
+                  gap: 3px;
+                  display: flex;
+                  font-family: Roboto;
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 18px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  color: #414141;
+                  p{
+                    color: #606060;
+                    font-family: Rubik;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                  }                 
+                }
+              }
+            }
+            .ikkinchibolak{
+              display: flex;
+              gap: 40px;
+              h4{
+                padding-right: 8px;
+                padding-top: 8px;
+                font-family: Rubik;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: right;
+                color: #414141;
+              }
+              p{
+                padding-right: 8px;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: right;
+                color: #8F8F8F;
+                text-decoration: line-through;
+              }
+              .btns{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .bir{
+                  width: 33px;
+                  height: 40px;
+                  border-radius: 4px 0 0 4px;
+                  background: #70C05B;
+                }
+                .ikki{
+                  width: 33px;
+                  height: 40px;
+                  background: #70C05B;
+                }
+                .uch{
+                  width: 33px;
+                  height: 40px;
+                  background: #70C05B;
+                  border-radius: 0 4px 4px 0;
+                }
+                button{
+                  color: #FFF;
+                  font-family: Rubik;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  letter-spacing: 0em;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

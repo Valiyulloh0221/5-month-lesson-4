@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/png;base64,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" />
+    <title>Корзина</title>
+    <link rel="stylesheet" href="../sass/main/index.css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <button id="btn-close"><img src="../assets/images/products/x-mark.png" alt=""></button>
+      <h2>Вход</h2>
+      <form class="modal-form">
+        <div class="nomer">
+          <label for="number" class="leybl">Телефон</label>
+          <input type="number" id="number" name="number" placeholder="+998 90"
+          pattern="^\+998(33|55|77|88|9\d{1})(\d{7})$"
+          oninvalid="alert('Please enter a valid phone number')">
+        </div>
+        <button type="submit">Вход</button>
+      </form>
+      <div class="btns">
+        <button>Регистрация</button>
+        <button>Забыли пароль?</button>
+      </div>
+    </div>
+  </div>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="navbar__content">
+                    <img class="navbar__content__image" src="../assets/images/index/mainlogo.svg" alt="" />
+                    <img class="navbar__content__image2" src="../assets/images/index/mainlogosvg.svg" alt="" />
+                    <div class="navbar__content__search">
+                        <a class="hidden__part Hidden280" href="#">
+                            <img src="../assets/images/index/navbarthreelines/feather-icon/menu.svg" alt="" />
+                            <h6 class="Hidden950">Каталог</h6>
+                        </a>
+                        <div class="search">
+                            <input type="text" placeholder="Найти товар" />
+                            <img class="inputImage" src="../assets/images/index/NavbarSearch/feather-icon/search.svg"
+                                alt="" />
+                        </div>
+                    </div>
+                    <ul class="navbar__content__link">
+                        <li>
+                            <a href="#"><img src="../assets/images/index/Frame 211.svg" alt="" />
+                                <p>Избранное</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./products.html"><img src="../assets/images/index/navbarBix.svg" alt="" />
+                                <p>продукты</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar__content__basket"><span>1</span><img
+                                    src="../assets/images/index/shopping.basket/feather-icon/shopping-cart.svg"
+                                    alt="" />
+                                <p>Корзина</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button id="btn-open" class="navbar__content__person">
+                        <img src="./assets/images/index/navbarperson.svg" alt="" />
+                        <p class="Hidden950">Valiyulloh</p>
+                    </button>
+                    <a href="#" class="Hidden950"><img src="../assets/images/index/navbarbelow.svg" alt="" /></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="catalog hidden__catalog">
+            <ul class="catalog__things">
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Молоко, сыр, яйцо</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Хлеб</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Фрукты и овощи</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Замороженные продукты</a>
+                </li>
+            </ul>
+            <ul class="catalog__things">
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Напитки</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Кондитерские изделия</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Чай, кофе</a>
+                </li>
+            </ul>
+            <ul class="catalog__things">
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Бакалея</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Здоровое питание</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Зоотовары</a>
+                </li>
+            </ul>
+            <ul class="catalog__things">
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Мясо, птица, колбаса</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Детское питание</a>
+                </li>
+                <li class="catalog__items">
+                    <a href="" class="catalog__links">Непродовольственные товары</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  <main class="basket-main">
+    <div class="links">
+      <a href="../index.html">Главная <img src="../assets/images/products/chevron-right.png" alt=""></a>
+      <a href="#">Корзина</a>
+    </div>
+    <h2 class="yoz">Корзина</h2>
+    <section class="addcart">
+      <div class="container">
+        <div class="left">
+          <div class="belgilash">
+            <button class="belgi"><img src="../assets/images/products/belgilasj.png" alt="">Выделить всё</button>
+            <button class="ochir">Удалить выбранные</button>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="birinchibolak">
+                <div><img src="../assets/images/products/narsa.png" alt=""></div>
+                <div class="yozuv">
+                  <h5>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h5>
+                  <h6>44,50 ₽ <p>за шт.</p></h6>
+                </div>
+              </div>
+              <div class="ikkinchibolak">
+                <div class="btns">
+                  <button class="bir" id="minus">-</button>
+                  <button class="ikki" id="son">1</button>
+                  <button class="uch" id="plus">+</button>
+                </div>
+                <h4>89,00 ₽</h4>
+              </div>
+            </div>
+            <div class="card">
+              <div class="birinchibolak">
+                <div><img src="../assets/images/products/narsa.png" alt=""></div>
+                <div class="yozuv">
+                  <h5>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h5>
+                  <h6>44,50 ₽ <p>за шт.</p></h6>
+                </div>
+              </div>
+              <div class="ikkinchibolak">
+                <div class="btns">
+                  <button class="bir" id="minus">-</button>
+                  <button class="ikki" id="son">1</button>
+                  <button class="uch" id="plus">+</button>
+                </div>
+                <div>
+                  <h4>80,10 ₽</h4>
+                  <p>89,00 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="birinchibolak">
+                <div><img src="../assets/images/products/narsa.png" alt=""></div>
+                <div class="yozuv">
+                  <h5>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h5>
+                  <h6>44,50 ₽ <p>за шт.</p></h6>
+                </div>
+              </div>
+              <div class="ikkinchibolak">
+                <div class="btns">
+                  <button class="bir" id="minus">-</button>
+                  <button class="ikki" id="son">1</button>
+                  <button class="uch" id="plus">+</button>
+                </div>
+                <h4>89,00 ₽</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer class="allproducts-footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__all">
+                    <a href="#" class="footer__link__items"><img src="../assets/images/index/mainlogosvg.svg"
+                            alt="" /></a>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link__items">О компании</a></li>
+                        <li><a href="#" class="footer__link__items">Контакты</a></li>
+                        <li><a href="#" class="footer__link__items">Вакансии</a></li>
+                        <li><a href="#" class="footer__link__items">Статьи</a></li>
+                        <li>
+                            <a href="#" class="footer__link__items">Политика обработки персональных данных</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#" class="footer__social__network"><img
+                                    src="../assets/images/index/insta/social/instagram.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social__network"><img
+                                    src="../assets/images/index/face/social/Group 465.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social__network"><img
+                                    src="../assets/images/index/wiki/social/vkontakte.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social__network"><img
+                                    src="../assets/images/index/odnok/social/ok.svg" alt="" /></a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials__next">
+                        <div class="parts">
+                            <li>
+                                <a href="#"><img src="../assets/images/index/phonefooter/feather-icon/phone.svg"
+                                        alt="" /></a>
+                            </li>
+                            <li><a href="#">8898888383</a></li>
+                        </div>
+                        <p>Дизайн</p>
+                        <img src="../assets/images/index/zakovskiy.svg" alt="" />
+                    </div>
+                    <ul class="footer__links2">
+                        <li><a href="#" class="footer__link__items">О компании</a></li>
+                        <li><a href="#" class="footer__link__items">Контакты</a></li>
+                        <li><a href="#" class="footer__link__items">Вакансии</a></li>
+                        <li><a href="#" class="footer__link__items">Статьи</a></li>
+                        <li>
+                            <a href="#" class="footer__link__items">Политика обработки персональных данных</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__special">
+                    <ul class="footer__content__link">
+                        <li>
+                            <a class="footer__link__bottom" href="#"><img src="../assets/images/index/blackthree.svg"
+                                    alt="" />
+                                <h6>Каталог</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/images/index/Frame 211.svg" alt="" />
+                                <p>Избранное</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/images/index/navbarBix.svg" alt="" />
+                                <p>продукты</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__content__basket"><span>1</span><img
+                                    src="../assets/images/index/shopping.basket/feather-icon/shopping-cart.svg"
+                                    alt="" />
+                                <p>Корзина</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__content__person">
+                        <img src="../assets/images/index/navbarperson.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/basket.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/product-data.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

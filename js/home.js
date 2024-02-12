@@ -1,15 +1,15 @@
 /// modal content
-const modalOpen = document.getElementById('btn-open');
-const modalClose = document.getElementById('btn-close');
-const modal = document.querySelector('.autorization');
-const modalContent = document.querySelector('.autorization-content');
+const btnOpen = document.getElementById('btn-open');
+const btnClose = document.getElementById('btn-close');
+const modal = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal-content');
 
-modalOpen.addEventListener('click', function (e) {
+btnOpen.addEventListener('click', function (e) {
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
 });
 
-modalClose.addEventListener('click', function (e) {
+btnClose.addEventListener('click', function (e) {
   modal.classList.remove('open');
   document.body.style.overflow = 'auto';
 });
